@@ -4,16 +4,19 @@
       <div class="container px-5 py-8 mx-auto">
         <div class="text-center mb-10">
           <h1
+            data-aos="fade-up"
             class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"
           >
             {{ $t("services") }}
           </h1>
           <p
+            data-aos="fade-up"
             class="text-base italic leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s"
           >
             &#171; {{ $t("servicetext") }} &#187;
           </p>
           <hr
+            data-aos="fade-up"
             class="bg-blue-500 w-16 h-1 mt-6 mx-auto rounded-full "
           />
         </div>
@@ -21,6 +24,7 @@
           class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
         >
           <div
+            data-aos="fade-up"
             class="p-4 md:w-1/3 flex flex-col text-center items-center"
           >
             <div
@@ -84,6 +88,8 @@
             </div>
           </div>
           <div
+            data-aos="fade-up"
+            data-aos-delay="300"
             class="p-4 md:w-1/3 flex flex-col text-center items-center"
           >
             <div
@@ -130,6 +136,8 @@
             </div>
           </div>
           <div
+            data-aos="fade-up"
+            data-aos-delay="500"
             class="p-4 md:w-1/3 flex flex-col text-center items-center"
           >
             <div
@@ -168,7 +176,3 @@
     </div>
   </div>
 </template>
-
-
-
-
