@@ -33,33 +33,59 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["nuxt-i18n"],
+  modules: [[
+    'nuxt-i18n',
+    {
+       locales: [
+        {
+           code: 'en',
+           name: 'English',
+           iso: 'en',
+           file: 'en'
+        },
+        {
+           code: 'ru',
+           name: 'Russian',
+           iso: 'ru',
+           file: 'ru'
+        },
+        {
+          code: 'uz',
+          name: 'Uzbek',
+          iso: 'uz',
+          file: 'uz'
+       }
+      ],
+      langDir: 'locales/',
+      defaultLocale: 'en',
+    }
+   ]],
 
-  i18n: {
-    lazy: true,
-    langDir: "locales/",
-    locales: [
-      {
-        code: "en",
-        name: "English",
-        iso: "en",
-        file: "en"
-      },
-      {
-        code: "ru",
-        name: "Russian",
-        iso: "ru",
-        file: "ru"
-      },
-      {
-        code: "uz",
-        name: "Uzbek",
-        iso: "uz",
-        file: "uz"
-      }
-    ],
-    defaultLocale: "en"
-  },
+  // i18n: {
+  //   lazy: true,
+  //   langDir: "locales/",
+  //   locales: [
+  //     {
+  //       code: "en",
+  //       name: "English",
+  //       iso: "en",
+  //       file: "en"
+  //     },
+  //     {
+  //       code: "ru",
+  //       name: "Russian",
+  //       iso: "ru",
+  //       file: "ru"
+  //     },
+  //     {
+  //       code: "uz",
+  //       name: "Uzbek",
+  //       iso: "uz",
+  //       file: "uz"
+  //     }
+  //   ],
+  //   defaultLocale: "en"
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}

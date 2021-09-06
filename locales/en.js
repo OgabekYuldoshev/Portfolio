@@ -3,7 +3,7 @@ export default {
   position: "Full-Stuck Web Developer",
   location: "Uzbekistan, Samarkand",
   motivation:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et suscipit inventore asperiores tempora laboriosam quibusdam voluptas a non labore deserunt accusantium impedit, iusto cupiditate est quasi ut sint facere. Ea.",
+    "The point is not just that we laugh because we are happy, the point is that we are happy because we laugh.",
   contactme: "Contact Me",
   contacts: "Contacts",
   addres: "Address",

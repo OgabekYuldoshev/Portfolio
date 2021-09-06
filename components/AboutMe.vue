@@ -35,11 +35,20 @@
         <div class="md:flex grid gap-3 mt-4">
           <div class="w-full md:w-1/2">
             <label>Frontend</label>
-            <el-progress :percentage="83"></el-progress>
+            <div class="shadow w-full bg-grey-light mt-2 border rounded overflow-hidden border-gray-300">
+              <div
+                class="bg-green-500 text-xs leading-none py-1 text-center text-white"
+                style="width: 86%"
+              >
+                86%
+              </div>
+            </div>
           </div>
           <div class="w-full md:w-1/2">
             <label>Backend</label>
-            <el-progress :percentage="40"></el-progress>
+            <div class="shadow w-full bg-grey-light mt-2 border rounded overflow-hidden border-gray-300">
+    <div class="bg-yellow-400 text-xs leading-none py-1 text-center text-white" style="width: 42%">42%</div>
+  </div>
           </div>
         </div>
       </div>

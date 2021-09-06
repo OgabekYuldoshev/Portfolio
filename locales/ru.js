@@ -2,8 +2,8 @@ export default {
   name: "Огабек Юлдошев",
   position: "Full-Stuck Web Developer",
   location: "Узбекистан, Самарканд",
-  about:
-    "Lorem ipsum dolor sit amet conctetur adipisicing elit. Et suscipit Inventore asperiores tempora Laboriosam quibusdam voluptas a non labore deserunt accusantium impedit, iusto cupiditate est quasi ut sint facere. Ea.",
+  motivation:
+    "Дело не только в том, что мы смеемся, потому что мы счастливы, дело в том, что мы счастливы, потому что смеемся.",
   contactme: "Свяжитесь со мной",
   contacts: "Контакты",
   addres: "Адрес",

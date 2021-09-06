@@ -3,7 +3,7 @@ export default {
     position: "Full-Stuck Web Developer",
     location: "O'zbekistan, Samarqand",
     motivation:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et suscipit inventore asperiores tempora laboriosam quibusdam voluptas a non labore deserunt accusantium impedit, iusto cupiditate est quasi ut sint facere. Ea.",
+      "Gap faqat biz baxtiyorligimiz sabab kulayotganimizda emas, Gap shundaki biz kulayotganimiz uchun baxtlimiz.",
     contactme: "Men bilan bog'lanish",
     contacts: "Kontaktlar",
     addres: "Manzil",
