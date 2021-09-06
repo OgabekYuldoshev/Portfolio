@@ -21,21 +21,19 @@
           {{ $t("skills") }}
         </h2>
         <nav class="flex flex-wrap items-center gap-3 list-none -mb-1">
-          <li v-for="s in $info.skills" :key="s.name">
-            <el-tooltip
-              class="item"
-              effect="dark"
-              :content="s.name"
-              placement="top"
-            >
+          <li class="grid" v-for="s in $info.skills" :key="s.name">
+            <div class="flex items-center justify-center">
               <img width="40" height="40" :src="s.img" alt="" />
-            </el-tooltip>
+            </div>
+            <h1 class="text-center">{{ s.name }}</h1>
           </li>
         </nav>
         <div class="md:flex grid gap-3 mt-4">
           <div class="w-full md:w-1/2">
             <label>Frontend</label>
-            <div class="shadow w-full bg-grey-light mt-2 border rounded overflow-hidden border-gray-300">
+            <div
+              class="shadow w-full bg-grey-light mt-2 border rounded overflow-hidden border-gray-300"
+            >
               <div
                 class="bg-green-500 text-xs leading-none py-1 text-center text-white"
                 style="width: 86%"
@@ -46,9 +44,16 @@
           </div>
           <div class="w-full md:w-1/2">
             <label>Backend</label>
-            <div class="shadow w-full bg-grey-light mt-2 border rounded overflow-hidden border-gray-300">
-    <div class="bg-yellow-400 text-xs leading-none py-1 text-center text-white" style="width: 42%">42%</div>
-  </div>
+            <div
+              class="shadow w-full bg-grey-light mt-2 border rounded overflow-hidden border-gray-300"
+            >
+              <div
+                class="bg-yellow-400 text-xs leading-none py-1 text-center text-white"
+                style="width: 42%"
+              >
+                42%
+              </div>
+            </div>
           </div>
         </div>
       </div>
