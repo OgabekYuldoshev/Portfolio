@@ -33,7 +33,16 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [[
+  modules: ['@nuxtjs/axios',
+  ['nuxt-mail', {
+    message: {
+      to: 'yuldashoff1@gmail.com',
+    },
+    smtp: {
+      host: "localhost",
+      port: 465,
+    },
+  }], [
     'nuxt-i18n',
     {
        locales: [
