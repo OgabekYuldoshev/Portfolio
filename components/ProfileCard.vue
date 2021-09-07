@@ -77,16 +77,17 @@
             </svg>
             {{ $t("inputLocation") }} - {{ $t("location") }}
           </p>
-          <p class="pt-8 text-sm">
-            {{ $t("motivation") }}
+          <p class="pt-8 text-sm italic">
+            &#171; {{ $t("motivation") }} &#187;
           </p>
 
           <div class="pt-8 pb-4">
-            <button
+            <a
+              :href="$info.links.telegram"
               class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full"
             >
               {{ $t("contactme") }}
-            </button>
+            </a>
           </div>
 
           <div
