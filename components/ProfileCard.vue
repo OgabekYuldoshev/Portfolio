@@ -3,6 +3,10 @@
     class="relative font-sans antialiased text-gray-900 bg-center leading-normal tracking-wider bg-cover"
     style="background-image:url('https://images.unsplash.com/photo-1437413646517-e98caade5a58?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');"
   >
+    <div class="absolute top-3 left-5 flex gap-1 flex items-center text-gray-300 text-xs">
+      <span>{{ $t("visitors") }}:</span>
+      <span>{{ visited }}</span>
+    </div>
     <div class="absolute top-3 right-5 flex gap-3">
       <!-- <el-select v-model="$i18n.locale" placeholder="Select Language">
         <el-option
@@ -200,3 +204,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      visited: 0
+    };
+  },
+  mounted() {
+    this.$axios
+      .$get("https://api.countapi.xyz/hit/yuldoshev.vercel.app/visits")
+      .then(res => {
+        this.visited = res.value;
+      })
+      .catch(err => {
+        alert("Visited Error");
+      });
+  }
+};
+</script>

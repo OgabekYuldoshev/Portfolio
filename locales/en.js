@@ -32,6 +32,8 @@ export default {
     "If there are any errors or omissions on our site that you received from us, we will fix it for you for free!",
   skills: "Skills",
 
+  visitors:"Visitors",
+
   // next
   technologies: "Technologies",
   links: "Links",

@@ -31,7 +31,7 @@ export default {
     service3text:
       "Agar siz bizdan olgan saytingizda xatolar yoki kamchiliklar bo'lsa, biz uni bepul tuzatib beramiz!",
     skills: "Ko'nikmalar",
-  
+    visitors:"Tashrif buyuruvchilar",
     // next
     technologies: "Texnologiyalar",
     links: "Havolalar",
