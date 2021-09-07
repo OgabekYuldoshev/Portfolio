@@ -33,14 +33,17 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/axios',
-  ['nuxt-mail', {
+  modules: ['@nuxtjs/axios', ['nuxt-mail', {
     message: {
       to: 'yuldashoff1@gmail.com',
     },
     smtp: {
-      host: "localhost",
-      port: 465,
+      host: 'smtp.mailtrap.io',
+      port: 2525,
+      auth: {
+        user: process.env.USER,
+        pass: process.env.PASS
+      },
     },
   }], [
     'nuxt-i18n',
