@@ -2,7 +2,7 @@
   <section class=" px-4 md:px-24 text-gray-600 body-font">
     <div class="container flex flex-wrap px-5 py-10 mx-auto items-center">
       <div
-        data-aos="fade-right"
+        data-aos="fade-up"
         class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200"
       >
         <h1
@@ -14,7 +14,7 @@
           {{ $t("aboutMe") }}
         </p>
       </div>
-      <div data-aos="fade-left" class="flex flex-col md:w-1/2 md:pl-12">
+      <div data-aos="fade-up" class="flex flex-col md:w-1/2 md:pl-12">
         <h2
           class="title-font font-semibold text-gray-800 tracking-wider text-base mb-3"
         >

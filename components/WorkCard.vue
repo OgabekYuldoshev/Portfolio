@@ -1,6 +1,5 @@
 <template>
   <div
-    data-aos="fade-up"
     class="max-w-sm rounded overflow-hidden shadow hover:shadow-lg duration-300"
   >
     <img

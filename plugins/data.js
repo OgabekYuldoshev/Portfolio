@@ -59,7 +59,12 @@ export default (ctx, inject) => {
         name: "onlineStore",
         img: '/market.jpg',
         use: ['NextJS', 'Redux', "VueJS", "NuxtJS"],
-        links:[{
+        links:[
+          {
+            name: "Auto Market",
+            link: 'https://auto-shopping.vercel.app/'
+          },
+          {
           name: "Market",
           link: 'https://tinfis.vercel.app/'
         },{
