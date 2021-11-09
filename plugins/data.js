@@ -56,51 +56,47 @@ export default (ctx, inject) => {
     },
     works:[
       {
-        name: "onlineStore",
-        img: '/market.jpg',
-        use: ['NextJS', 'Redux', "VueJS", "NuxtJS"],
-        links:[
-          {
-            name: "Auto Market",
-            link: 'https://auto-shopping.vercel.app/'
-          },
-          {
-          name: "Market",
-          link: 'https://tinfis.vercel.app/'
-        },{
-          name: "Progressing",
-          link: 'https://unknown.vercel.app/'
-        }]
+        name: "Portfolio Web Site",
+        img: '/works/shazik.png',
+        use: ['Nodejs', 'ExpressJS', "EJS", "MongoDB"],
+        code: 'https://github.com/OgabekYuldoshev/shazik',
+        live: 'http://shazik.herokuapp.com/'
       },
       {
-        name: "landingPages",
-        img: '/web.jpg',
-        use: ['HtmL', 'Css', 'Js', "JQuery"],
-        links:[
-          {
-          name: "Interior",
-          link: 'https://interior-web-site.vercel.app/'
-        },
-        {
-          name: "Hotels",
-          link: 'https://ae-two.vercel.app/'
-        },
-        {
-          name: "Tour",
-          link: 'https://tour-gold.vercel.app/'
-        },  ]
+        name: "Interior Design Site",
+        img: '/works/inter.png',
+        use: ['HTML', 'CSS', "JS"],
+        code: 'https://github.com/OgabekYuldoshev/Interior-Web-Site',
+        live: 'https://interior-web-site.vercel.app/'
       },
       {
-        name: "games",
-        img: '/game.jpg',
-        use: ['Js', "JQuery"],
-        links:[
-          {
-          name: "Play",
-          link: 'https://catchball.vercel.app/'
-        },
-        ]
-      }
+        name: "Online Store",
+        img: '/works/shopping.png',
+        use: ["VueJS", 'NuxtJS'],
+        code: 'https://github.com/OgabekYuldoshev/shopping',
+        live: 'https://unknown.vercel.app/product/hello'
+      },
+      {
+        name: "Online Auto Store",
+        img: '/works/auto-shopping.png',
+        use: ["VueJS", 'NuxtJS'],
+        code: 'https://github.com/OgabekYuldoshev/auto-shopping',
+        live: 'https://auto-shopping.vercel.app/'
+      },
+      {
+        name: "AE Hotel",
+        img: '/works/ae.png',
+        use: ["HTML", 'CSS', "GSap", "JS", "JQuery"],
+        code: 'https://github.com/OgabekYuldoshev/ae',
+        live: 'https://ae-two.vercel.app/'
+      },
+      {
+        name: "Game",
+        img: '/works/game.png',
+        use: ["HTML", 'CSS', "JS", "JQuery"],
+        code: 'https://github.com/OgabekYuldoshev/Catch-this-Ball',
+        live: 'https://catchball.vercel.app/'
+      },
     ]
   };
   //  console.log(ctx)

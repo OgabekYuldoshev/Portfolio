@@ -1,34 +1,29 @@
 <template>
   <div
-    class="max-w-sm rounded overflow-hidden shadow hover:shadow-lg duration-300"
+    id="work-card"
+    :style="'background-image: url(' + work.img + ');'"
+    class="w-full h-80"
   >
-    <img
-      class="w-full h-64 object-cover object-center"
-      :src="work.img"
-      alt="Mountain"
-    />
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl">{{ $t(work.name) }}</div>
-    </div>
-    <div class="flex gap-1">
-      <div class="px-6 pb-2">
-        <p class="mb-2 font-medium">{{ $t("technologies") }}:</p>
-        <span
-          v-for="n in work.use"
-          :key="n"
-          class="inline-block bg-gray-200 rounded px-2 py-1 text-sm font-semibold text-gray-700 mr-1 mb-2"
-          >#{{ n }}</span
-        >
-      </div>
-      <div class="px-6 pb-2">
-        <p class="mb-2 font-medium">{{ $t("links") }}:</p>
-        <a
-          v-for="l in work.links"
-          :key="l"
-          :href="l.link"
-          class="inline-block hover:bg-blue-400 duration-300 cursor-pointer hover:text-white bg-gray-200 rounded px-2 py-1 text-sm font-semibold text-gray-700 mr-1 mb-2"
-          >#{{ l.name }}</a
-        >
+    <div id="work-overflow">
+      <div class="flex flex-col items-center gap-5">
+        <h1 class="uppercase text-2xl font-bold">{{ work.name }}</h1>
+        <div class="flex gap-2">
+          <p>Used:</p>
+          <span v-for="t in work.use" :key="t">{{ t }},</span>
+        </div>
+        <div class="flex gap-2">
+          <a
+            v-show="work.live"
+            :href="work.live"
+            class="py-2 w-24 flex items-center justify-center border-blue-500 border-2 hover:bg-blue-500 duration-300 rounded text-blue-500 hover:text-white font-bold "
+            >Live</a
+          >
+          <a
+            :href="work.code"
+            class="py-2 w-24 flex items-center justify-center border-blue-500 border-2 hover:bg-blue-500 duration-300 rounded text-blue-500 hover:text-white font-bold "
+            >Code</a
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -38,3 +33,27 @@ export default {
   props: ["work"]
 };
 </script>
+
+<style scoped>
+#work-card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: start;
+}
+#work-overflow {
+  opacity: 0;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#work-card:hover > #work-overflow {
+  opacity: 1;
+}
+</style>

@@ -35,7 +35,7 @@
               class="shadow w-full bg-grey-light mt-2 border rounded overflow-hidden border-gray-300"
             >
               <div
-                class="bg-green-500 text-xs leading-none py-1 text-center text-white"
+                class="bg-green-600 text-xs leading-none py-1 text-center text-white"
                 style="width: 86%"
               >
                 86%
@@ -48,10 +48,10 @@
               class="shadow w-full bg-grey-light mt-2 border rounded overflow-hidden border-gray-300"
             >
               <div
-                class="bg-yellow-400 text-xs leading-none py-1 text-center text-white"
-                style="width: 42%"
+                class="bg-green-400 text-xs leading-none py-1 text-center text-white"
+                style="width: 53%"
               >
-                42%
+                53%
               </div>
             </div>
           </div>

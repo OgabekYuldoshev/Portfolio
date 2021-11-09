@@ -16,12 +16,15 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
+  ssr: false,
+  loadingIndicator: {
+    name: "wandering-cubes",
+    color: "#3B8070",
+    background: "black"
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    { src: "~/plugins/data.js" },
-    { src: "~/plugins/aos", ssr: false }
-  ],
+  plugins: [{ src: "~/plugins/data.js" }, { src: "~/plugins/aos", ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -33,45 +36,52 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/axios', ['nuxt-mail', {
-    message: {
-      to: 'yuldashoff1@gmail.com',
-    },
-    smtp: {
-      host: 'smtp.mailtrap.io',
-      port: 2525,
-      auth: {
-        user: process.env.USER,
-        pass: process.env.PASS
-      },
-    },
-  }], [
-    'nuxt-i18n',
-    {
-       locales: [
-        {
-           code: 'en',
-           name: 'English',
-           iso: 'en',
-           file: 'en'
+  modules: [
+    "@nuxtjs/axios",
+    [
+      "nuxt-mail",
+      {
+        message: {
+          to: "yuldashoff1@gmail.com"
         },
-        {
-           code: 'ru',
-           name: 'Russian',
-           iso: 'ru',
-           file: 'ru'
-        },
-        {
-          code: 'uz',
-          name: 'Uzbek',
-          iso: 'uz',
-          file: 'uz'
-       }
-      ],
-      langDir: 'locales/',
-      defaultLocale: 'en',
-    }
-   ]],
+        smtp: {
+          host: "smtp.mailtrap.io",
+          port: 2525,
+          auth: {
+            user: process.env.USER,
+            pass: process.env.PASS
+          }
+        }
+      }
+    ],
+    [
+      "nuxt-i18n",
+      {
+        locales: [
+          {
+            code: "en",
+            name: "English",
+            iso: "en",
+            file: "en"
+          },
+          {
+            code: "ru",
+            name: "Russian",
+            iso: "ru",
+            file: "ru"
+          },
+          {
+            code: "uz",
+            name: "Uzbek",
+            iso: "uz",
+            file: "uz"
+          }
+        ],
+        langDir: "locales/",
+        defaultLocale: "en"
+      }
+    ]
+  ],
 
   // i18n: {
   //   lazy: true,
