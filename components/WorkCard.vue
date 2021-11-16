@@ -19,6 +19,7 @@
             >Live</a
           >
           <a
+            v-show="work.code"
             :href="work.code"
             class="py-2 w-24 flex items-center justify-center border-blue-500 border-2 hover:bg-blue-500 duration-300 rounded text-blue-500 hover:text-white font-bold "
             >Code</a
