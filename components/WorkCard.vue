@@ -13,15 +13,43 @@
         </div>
         <div class="flex gap-2">
           <a
+            target="_blank"
             v-show="work.live"
             :href="work.live"
-            class="py-2 w-24 flex items-center justify-center border-blue-500 border-2 hover:bg-blue-500 duration-300 rounded text-blue-500 hover:text-white font-bold "
+            class="
+              py-2
+              w-24
+              flex
+              items-center
+              justify-center
+              border-blue-500 border-2
+              hover:bg-blue-500
+              duration-300
+              rounded
+              text-blue-500
+              hover:text-white
+              font-bold
+            "
             >Live</a
           >
           <a
+            target="_blank"
             v-show="work.code"
             :href="work.code"
-            class="py-2 w-24 flex items-center justify-center border-blue-500 border-2 hover:bg-blue-500 duration-300 rounded text-blue-500 hover:text-white font-bold "
+            class="
+              py-2
+              w-24
+              flex
+              items-center
+              justify-center
+              border-blue-500 border-2
+              hover:bg-blue-500
+              duration-300
+              rounded
+              text-blue-500
+              hover:text-white
+              font-bold
+            "
             >Code</a
           >
         </div>
@@ -31,7 +59,7 @@
 </template>
 <script>
 export default {
-  props: ["work"]
+  props: ["work"],
 };
 </script>
 
