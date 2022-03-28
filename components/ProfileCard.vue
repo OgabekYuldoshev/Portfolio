@@ -1,9 +1,31 @@
 <template>
   <div
-    class="relative font-sans antialiased text-gray-900 bg-center leading-normal tracking-wider bg-cover"
-    style="background-image:url('https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');"
+    class="
+      relative
+      font-sans
+      antialiased
+      text-gray-900
+      bg-center
+      leading-normal
+      tracking-wider
+      bg-cover
+    "
+    style="
+      background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    "
   >
-    <div class="absolute top-3 left-5 flex gap-1 flex items-center text-gray-300 text-xs">
+    <div
+      class="
+        absolute
+        top-3
+        left-5
+        flex
+        gap-1
+        flex
+        items-center
+        text-gray-300 text-xs
+      "
+    >
       <span>{{ $t("visitors") }}:</span>
       <span>{{ visited }}</span>
     </div>
@@ -20,37 +42,80 @@
       <span
         v-for="lang in $i18n.locales"
         :key="lang.code"
-        :class="
-          `${
-            $i18n.locale === lang.code ? 'text-white' : 'text-gray-500'
-          } uppercase cursor-pointer text-medium`
-        "
+        :class="`${
+          $i18n.locale === lang.code ? 'text-white' : 'text-gray-500'
+        } uppercase cursor-pointer text-medium`"
         @click="$i18n.locale = lang.code"
       >
         {{ lang.code }}
       </span>
     </div>
     <div
-      class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto py-24 lg:py-0"
+      class="
+        max-w-4xl
+        flex
+        items-center
+        h-auto
+        lg:h-screen
+        flex-wrap
+        mx-auto
+        py-24
+        lg:py-0
+      "
     >
       <!--Main Col-->
       <div
         id="profile"
-        class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-90 mx-6 lg:mx-0"
+        class="
+          w-full
+          lg:w-3/5
+          rounded-lg
+          lg:rounded-l-lg lg:rounded-r-none
+          shadow-2xl
+          bg-white
+          opacity-90
+          mx-6
+          lg:mx-0
+        "
       >
         <div class="p-4 md:p-12 text-center lg:text-left">
           <!-- Image for mobile view-->
           <div
-            class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+            class="
+              block
+              lg:hidden
+              rounded-full
+              shadow-xl
+              mx-auto
+              -mt-16
+              h-48
+              w-48
+              bg-cover bg-center
+            "
             :style="`background-image: url('/ogabek.jpg')`"
           ></div>
 
           <h1 class="text-3xl font-bold pt-8 lg:pt-0">{{ $t("name") }}</h1>
           <div
-            class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"
+            class="
+              mx-auto
+              lg:mx-0
+              w-4/5
+              pt-3
+              border-b-2 border-green-500
+              opacity-25
+            "
           ></div>
           <p
-            class="pt-4 text-base font-bold flex items-center justify-center lg:justify-start"
+            class="
+              pt-4
+              text-base
+              font-bold
+              flex
+              items-center
+              justify-center
+              lg:justify-start
+            "
           >
             <svg
               class="h-4 fill-current text-green-700 pr-4"
@@ -64,7 +129,15 @@
             {{ $t("position") }}
           </p>
           <p
-            class="pt-2 text-gray-600 text-xs lg:text-sm flex items-center justify-center lg:justify-start"
+            class="
+              pt-2
+              text-gray-600 text-xs
+              lg:text-sm
+              flex
+              items-center
+              justify-center
+              lg:justify-start
+            "
           >
             <svg
               class="h-4 fill-current text-green-700 pr-4"
@@ -84,14 +157,32 @@
           <div class="pt-8 pb-4">
             <a
               :href="$info.links.telegram"
-              class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full"
+              class="
+                bg-green-700
+                hover:bg-green-900
+                text-white
+                font-bold
+                py-2
+                px-4
+                rounded-full
+              "
             >
               {{ $t("contactme") }}
             </a>
           </div>
 
           <div
-            class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between"
+            class="
+              mt-6
+              pb-16
+              lg:pb-0
+              w-4/5
+              lg:w-full
+              mx-auto
+              flex flex-wrap
+              items-center
+              justify-between
+            "
           >
             <a
               class="link"
@@ -121,7 +212,12 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xml:space="preserve"
                 xmlns:serif="http://www.serif.com/"
-                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"
+                style="
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 1.41421;
+                "
               >
                 <title>Telegram</title>
                 <path
@@ -210,18 +306,18 @@
 export default {
   data() {
     return {
-      visited: 0
+      visited: 0,
     };
   },
   mounted() {
     this.$axios
       .$get("https://api.countapi.xyz/hit/yuldoshev.vercel.app/visits")
-      .then(res => {
+      .then((res) => {
         this.visited = res.value;
       })
-      .catch(err => {
+      .catch((err) => {
         alert("Visited Error");
       });
-  }
+  },
 };
 </script>
