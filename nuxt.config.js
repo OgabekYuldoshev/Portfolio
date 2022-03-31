@@ -9,7 +9,7 @@ export default {
       "Hi, I am a Frontend Developer and a freelancer. Contact me if you need me!",
     meta: [
       { charset: "utf-8" },
-      {name:"google-site-verification", content: "xfak3TZXYgTv-GFWLFgJ-3dOm1Cwj20x3czp4zNd1zM"},
+      {name:"google-site-verification", content: "aSKcOLIC7vnGozGCvFhKYXr3sBWSWSp5Kz_T4B2K_o4"},
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
