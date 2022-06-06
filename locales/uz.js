@@ -3,7 +3,8 @@ export default {
     position: "Full-Stuck Web Developer",
     location: "O'zbekistan, Samarqand",
     motivation:
-      "Gap faqat biz baxtiyorligimiz sabab kulayotganimizda emas, Gap shundaki biz kulayotganimiz uchun baxtlimiz.",
+      `Oson tanlov - qiyin hayot,
+      Qiyin tanlov - Oson hayot`,
     contactme: "Men bilan bog'lanish",
     contacts: "Kontaktlar",
     addres: "Manzil",

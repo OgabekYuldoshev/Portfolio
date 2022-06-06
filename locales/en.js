@@ -3,7 +3,8 @@ export default {
   position: "Full-Stuck Web Developer",
   location: "Uzbekistan, Samarkand",
   motivation:
-    "The point is not just that we laugh because we are happy, the point is that we are happy because we laugh.",
+    `Easy choice - Hard life,
+    Hard choice - Easy life`,
   contactme: "Contact Me",
   contacts: "Contacts",
   addres: "Address",
@@ -32,7 +33,7 @@ export default {
     "If there are any errors or omissions on our site that you received from us, we will fix it for you for free!",
   skills: "Skills",
 
-  visitors:"Visitors",
+  visitors: "Visitors",
 
   // next
   technologies: "Technologies",
