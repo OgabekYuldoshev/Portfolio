@@ -11,16 +11,12 @@ export default (ctx, inject) => {
         img: "/css.png",
       },
       {
+        name: "Sass",
+        img: "/sass.png",
+      },
+      {
         name: "JavaScript",
         img: "/js.png",
-      },
-      {
-        name: "VueJS",
-        img: "/vue.png",
-      },
-      {
-        name: "NuxtJS",
-        img: "/nuxt.png",
       },
       {
         name: "ReactJS",
@@ -31,8 +27,24 @@ export default (ctx, inject) => {
         img: "/next.png",
       },
       {
+        name: "Redux",
+        img: "/redux.svg",
+      },
+      {
+        name: "ViteJs",
+        img: "/vitejs.png",
+      },
+      {
+        name: "VueJS",
+        img: "/vue.png",
+      },
+      {
+        name: "NuxtJS",
+        img: "/nuxt.svg",
+      },
+      {
         name: "NodeJS",
-        img: "/node.png",
+        img: "/nodejs.svg",
       },
       {
         name: "ExpressJS",
@@ -44,11 +56,11 @@ export default (ctx, inject) => {
       },
       {
         name: "MySql",
-        img: "/mysql.png",
+        img: "/mysql.svg",
       },
       {
         name: "MongoDB",
-        img: "/mongodb.png",
+        img: "/mongodb.svg",
       },
       {
         name: "UI Widgets",
@@ -66,9 +78,22 @@ export default (ctx, inject) => {
       email: "yuldashoff1@gmail.com",
       phone: "+998 94 536 07 73",
     },
+
     works: [
       {
-        name: "QoraSuvAgro Sanoat Taminoti",
+        name: "Imulife.Uz",
+        img: "/works/imulife.png",
+        use: ["ReactJS", "NextJs"],
+        live: "https://qorasedanauz.vercel.app/",
+      },
+      {
+        name: "Khojamatov.Uz for Professor",
+        img: "/works/khojamatov.png",
+        use: ["ReactJS", "Vite", "PHP"],
+        live: "https://professors.vercel.app/",
+      },
+      {
+        name: "QoraSuvAgro.Uz Sanoat Taminoti",
         img: "/works/qorasuv.png",
         use: ["ReactJS", "PHP"],
         live: "https://qorasuvagro.vercel.app/",
@@ -94,13 +119,6 @@ export default (ctx, inject) => {
         live: "https://interior-web-site.vercel.app/",
       },
       {
-        name: "Online Store",
-        img: "/works/shopping.png",
-        use: ["VueJS", "NuxtJS"],
-        code: "https://github.com/OgabekYuldoshev/shopping",
-        live: "https://unknown.vercel.app/product/hello",
-      },
-      {
         name: "Online Auto Store",
         img: "/works/auto-shopping.png",
         use: ["VueJS", "NuxtJS"],
@@ -123,7 +141,6 @@ export default (ctx, inject) => {
       },
     ],
   };
-  //  console.log(ctx)
-  // Inject $api
+
   inject("info", factories);
 };
